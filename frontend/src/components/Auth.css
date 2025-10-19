@@ -1,0 +1,68 @@
+/* Compact Auth Form */
+.auth-form {
+    width: 100%;
+    padding: 0.5rem 0; /* Reduced padding */
+  }
+  
+  .auth-form h2 {
+    color: var(--primary);
+    margin-bottom: 0.3rem; /* Reduced */
+    text-align: center;
+    font-size: 1.6rem; /* Smaller font */
+    font-weight: 700;
+  }
+  
+  .auth-subtitle {
+    text-align: center;
+    color: var(--text-medium);
+    margin-bottom: 1.2rem; /* Reduced */
+    font-size: 0.9rem; /* Smaller */
+    line-height: 1.4;
+  }
+  
+  .auth-form .form-group {
+    margin-bottom: 0.8rem; /* Reduced from 1.5rem */
+  }
+  
+  .auth-form .form-group label {
+    display: block;
+    margin-bottom: 0.3rem; /* Reduced */
+    font-weight: 600;
+    color: var(--text-dark);
+    font-size: 0.85rem; /* Smaller */
+  }
+  
+  .auth-form .form-group input,
+  .auth-form .form-group textarea {
+    width: 100%;
+    padding: 0.7rem 0.9rem; /* Reduced padding */
+    border: 2px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.9rem; /* Smaller font */
+    transition: all 0.3s ease;
+    background: var(--card-bg);
+    font-family: inherit;
+    color: var(--text-dark);
+  }
+  
+  .auth-form .form-group textarea {
+    resize: vertical;
+    min-height: 60px; /* Reduced from 80px */
+    line-height: 1.4;
+  }
+  
+  .btn-primary.full-width {
+    width: 100%;
+    padding: 0.8rem 1.2rem; /* Reduced */
+    margin-top: 0.3rem; /* Reduced */
+    font-size: 1rem; /* Smaller */
+  }
+  
+  .auth-switch {
+    text-align: center;
+    margin-top: 1.2rem; /* Reduced */
+    padding-top: 1rem; /* Reduced */
+    border-top: 1px solid var(--border);
+    color: var(--text-medium);
+    font-size: 0.85rem; /* Smaller */
+  }
