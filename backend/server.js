@@ -7,14 +7,13 @@ const jwt = require('jsonwebtoken');
 
 const app = express();
 
-// Middleware
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:3000',
   credentials: true
 }));
 app.use(express.json());
 
-// Database connection
+
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/rype', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
@@ -29,12 +28,11 @@ mongoose.connection.on('error', (err) => {
   console.error('❌ MongoDB connection error:', err);
 });
 
-// Models
+
 const User = require('./models/User');
 const Product = require('./models/Product');
 const Order = require('./models/Order');
 
-// Mock email service
 const emailService = {
   sendOrderConfirmation: async (user, order) => {
     console.log(`📧 Order confirmation sent to ${user.email} for order #${order._id}`);
